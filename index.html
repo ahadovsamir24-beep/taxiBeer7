@@ -1,68 +1,55 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>מוניות העיר באר שבע</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מוניות העיר באר שבע</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-<!-- Preloader -->
-<div id="preloader">
-  <div class="welcome-text">ברוכים הבאים</div>
-  <div class="car-container">
-    <img src="mercedes-iq-e.png" alt="מרצדס IQ E" class="preloader-car">
-    <div class="road-glow"></div>
+  <!-- אנימציית טעינה -->
+  <div id="loader">
+    <div class="taxi"></div>
+    <p>טוען מערכת מוניות רובוטית…</p>
+    <div class="progress"></div>
   </div>
-</div>
 
-<!-- Main Content -->
-<div id="main-content" class="hidden">
-
-  <!-- Header -->
+  <!-- תוכן הדף -->
   <header>
-    <div class="logo">מוניות העיר באר שבע</div>
-    <div class="phone">054-5515868</div>
+    <img src="assets/logo.png" alt="לוגו מוניות העיר באר שבע" class="logo">
+    <h1>נעים. מהיר. מקצועי.</h1>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>מוניות העיר באר שבע</h1>
-    <p>הדרך הנוחה, מהירה ובטוחה להגיע לכל יעד בעיר ובסביבה – עם שירות אישי ומקצועי בכל נסיעה.</p>
-    <button class="cta-btn">השאר פרטים עכשיו</button>
-  </section>
+  <main>
+    <section class="about">
+      <h2>שירותי המוניות שלנו</h2>
+      <p>שירותי מוניות 24/7 באזור באר שבע, הנגב והדרום. הזמנה מהירה, נהגים מקצועיים וצוות ותיק לשירותך.</p>
+      <button onclick="window.location.href='https://wa.me/972545515868'">הזמן מונית</button>
+    </section>
 
-  <!-- יתרונות -->
-  <section class="advantages">
-    <div class="card">זמינות 24/7</div>
-    <div class="card">נהגים מנוסים ומקצועיים</div>
-    <div class="card">רכבים נקיים ומצוידים</div>
-    <div class="card">מחירים הוגנים ושקופים</div>
-    <div class="card">שירות אישי ומותאם לצרכים שלך</div>
-  </section>
+    <section class="gallery">
+      <h2>גלריה</h2>
+      <div class="images">
+        <img src="assets/taxi1.jpg" alt="מונית בבאר שבע">
+        <img src="assets/taxi2.jpg" alt="נסיעה לנתב"ג">
+        <img src="assets/city.jpg" alt="עיר באר שבע">
+      </div>
+    </section>
 
-  <!-- המלצות -->
-  <section class="testimonials">
-    <p>"הזמנתי מונית בשעה מאוחרת – הגיעה תוך 5 דקות, נהג אדיב ומקצועי!" – דנה ל.</p>
-    <p>"שירות מצוין! תמיד נקי, מהיר ונעים." – רונן פ.</p>
-    <p>"מומלץ מאוד – נהגים זמינים תמיד ומחירים הוגנים." – שרה מ.</p>
-  </section>
+    <section class="contact">
+      <h2>צור קשר</h2>
+      <form>
+        <input type="text" placeholder="שם מלא" required>
+        <input type="tel" placeholder="טלפון" required>
+        <textarea placeholder="פרטים נוספים"></textarea>
+        <button type="submit">שלח</button>
+      </form>
+    </section>
+  </main>
 
-  <!-- טופס יצירת קשר -->
-  <section class="contact">
-    <h2>השאר פרטים ונחזור אליך מיד</h2>
-    <form>
-      <input type="text" placeholder="שם מלא" required>
-      <input type="tel" placeholder="טלפון" required>
-      <input type="email" placeholder="אימייל">
-      <textarea placeholder="הודעה"></textarea>
-      <button type="submit" class="cta-btn">שלח</button>
-    </form>
-  </section>
-
-</div>
-
-<script src="script.js"></script>
+  <footer>
+    <p>© 2025 מוניות העיר באר שבע</p>
+  </footer>
 </body>
 </html>
